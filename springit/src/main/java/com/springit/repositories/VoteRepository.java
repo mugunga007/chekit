@@ -1,4 +1,4 @@
-package com.springit.model.repositories;
+package com.springit.repositories;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
