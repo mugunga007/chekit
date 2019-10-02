@@ -4,7 +4,8 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Profile;
+
+import com.springit.model.Link;
 
 @SpringBootApplication
 public class SpringitApplication {
@@ -15,10 +16,11 @@ public class SpringitApplication {
 	}
 	
 	@Bean
-	@Profile("dev") 
+	// @Profile("dev") 
 	CommandLineRunner runner() {
 		return args->{
-			System.out.println("Inside my Runner");
+		//	Link link = new Link("","");
+		//	System.out.println("What up");
 		};
 	}
 

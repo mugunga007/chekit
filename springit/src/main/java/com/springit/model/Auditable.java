@@ -7,6 +7,7 @@ import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import lombok.Getter;
+import lombok.NonNull;
 import lombok.Setter;
 
 import javax.persistence.EntityListeners;
@@ -18,19 +19,19 @@ import java.time.LocalDateTime;
 public abstract class Auditable {
 
     @CreatedBy
-    @Getter @Setter
+    @Getter @Setter  
     private String createdBy;
 
     @CreatedDate
-    @Getter @Setter
+    @Getter @Setter 
     private LocalDateTime creationDate;
 
     @LastModifiedBy
-    @Getter @Setter
+    @Getter @Setter 
     private String lastModifiedBy;
 
     @LastModifiedDate
-    @Getter @Setter
+    @Getter @Setter 
     private LocalDateTime lastModifiedDate;
 
    }

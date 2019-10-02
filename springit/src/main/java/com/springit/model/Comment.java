@@ -22,6 +22,6 @@ public class Comment extends Auditable {
 	@NonNull
 	private String body;
 	
-	@ManyToOne
+	@ManyToOne @NonNull
 	private Link link;
 }

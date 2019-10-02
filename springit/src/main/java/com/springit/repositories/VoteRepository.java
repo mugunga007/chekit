@@ -2,6 +2,8 @@ package com.springit.repositories;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface VoteRepository extends JpaRepository<VoteRepository, Long> {
+import com.springit.model.Vote;
+
+public interface VoteRepository extends JpaRepository<Vote, Long> {
 
 }
